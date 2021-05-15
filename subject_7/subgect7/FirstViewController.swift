@@ -19,10 +19,8 @@ final class FirstViewController: UIViewController {
         view.backgroundColor = .red
     }
     @IBAction private func addNumberButton(_ sender: UIButton) {
-        let num1 = Double(textFieldCollection[0].text!) ?? 0
-        let num2 = Double(textFieldCollection[1].text!) ?? 0
-        let resultNumber = num1 + num2
-        resultNumberLabel.text = String(resultNumber)
+        resultNumberLabel.text = String(Calculator().calculate(textFields: textFieldCollection, ope: +))
+
         textFieldCollection.forEach {
             $0.resignFirstResponder()
         }
@@ -33,5 +31,14 @@ extension FirstViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+}
+
+struct Calculator {
+    func calculate(textFields: [UITextField], ope: (Double, Double) -> Double) -> Double {
+        textFields
+            .map { $0.text ?? "" }
+            .map { Double($0) ?? 0 }
+            .reduce(0, ope)
     }
 }
