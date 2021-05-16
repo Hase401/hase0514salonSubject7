@@ -19,10 +19,8 @@ final class SecondViewController: UIViewController {
         view.backgroundColor = .green
     }
     @IBAction private func subtractNumberButton(_ sender: UIButton) {
-        let num1 = Double(textFieldCollection[0].text!) ?? 0
-        let num2 = Double(textFieldCollection[1].text!) ?? 0
-        let resultNumber = num1 - num2
-        resultNumberLabel.text = String(resultNumber)
+        resultNumberLabel.text = String(Calculator().calculate(textFields: textFieldCollection, ope: -))
+
         textFieldCollection.forEach {
             $0.resignFirstResponder()
         }
