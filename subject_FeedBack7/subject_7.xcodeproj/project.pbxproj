@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7DE56F26C3FA8D00CF5B62 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7DE56E26C3FA8D00CF5B62 /* Calculator.swift */; };
 		BABB726B264DEE9400630819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB726A264DEE9400630819 /* AppDelegate.swift */; };
 		BABB726D264DEE9400630819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABB726C264DEE9400630819 /* SceneDelegate.swift */; };
 		BABB7272264DEE9400630819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABB7270264DEE9400630819 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA7DE56E26C3FA8D00CF5B62 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		BABB7267264DEE9400630819 /* subject_7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subject_7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABB726A264DEE9400630819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABB726C264DEE9400630819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7DE56D26C3FA7500CF5B62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA7DE56E26C3FA8D00CF5B62 /* Calculator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BABB725E264DEE9400630819 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		BABB7269264DEE9400630819 /* subgect7 */ = {
 			isa = PBXGroup;
 			children = (
+				BA7DE56D26C3FA7500CF5B62 /* Model */,
 				BABB726A264DEE9400630819 /* AppDelegate.swift */,
 				BABB726C264DEE9400630819 /* SceneDelegate.swift */,
 				BABB7270264DEE9400630819 /* Main.storyboard */,
@@ -170,6 +181,7 @@
 				BABB727F264DF91D00630819 /* MainTabBarController.swift in Sources */,
 				BABB7283264DF97500630819 /* SecondViewController.swift in Sources */,
 				BABB7281264DF94D00630819 /* FirstViewController.swift in Sources */,
+				BA7DE56F26C3FA8D00CF5B62 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
