@@ -9,13 +9,15 @@ import UIKit
 
 final class MyViewController: UIViewController {
 
-    @IBOutlet var textFields: [UITextField]!
-    @IBOutlet weak var calculatedResultLabel: UILabel!
+    @IBOutlet private var textFields: [UITextField]!
+    @IBOutlet private weak var calculatedResultLabel: UILabel!
     private var model: CalculateProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.view.backgroundColor = model.backgroundColor
+
         textFields.forEach {
             $0.keyboardType = .numberPad
             $0.delegate = self
@@ -24,13 +26,14 @@ final class MyViewController: UIViewController {
 
     @IBAction func calculateButtonDidTapped(_ sender: Any) {
         textFields.forEach { $0.endEditing(true) }
-        let first = Double(textFields[0].text!) ?? 0
-        let second = Double(textFields[1].text!) ?? 0
-        let resultNum = model.calculate(firstNum: first, secondNum: second)
+        let firstNum = Double(textFields[0].text!) ?? 0
+        let secondNum = Double(textFields[1].text!) ?? 0
+        let resultNum = model.calculate(first: firstNum, second: secondNum)
         calculatedResultLabel.text = String(resultNum)
     }
 
-    // 【疑問】なぜ、この書き方？tabBarControllerとの関係がどう上手くいく？
+    // ViewController が index を意識しなくなったので、Tab以外でも使える画面になった
+        // → func configue(index: Int) みたいにしてmodelをindexから渡してVC作るのは❌
     static func instantiate(model: CalculateProtocol) -> MyViewController {
         guard let vc = UIStoryboard(name: "Calculate", bundle: nil).instantiateInitialViewController() as? MyViewController else {
             fatalError("ViewControllerが見つかりません")

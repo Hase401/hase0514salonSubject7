@@ -9,7 +9,7 @@ import UIKit
 
 final class SubtractionModel: CalculateProtocol {
     let backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1) // #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
-    func calculate(firstNum: Double, secondNum: Double) -> Double {
-        firstNum - secondNum
+    func calculate(first: Double, second: Double) -> Double {
+        first - second
     }
 }

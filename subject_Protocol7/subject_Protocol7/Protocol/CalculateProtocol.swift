@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CalculateProtocol: AnyObject {
+    // プロトコルではletではなくvarしか使えない
     var backgroundColor: UIColor { get }
-//    var calculate: (Int, Int) -> Int { get } // 【疑問】違いはどこ？
-    func calculate(firstNum: Double, secondNum: Double) -> Double
+    func calculate(first: Double, second: Double) -> Double
 }
