@@ -14,8 +14,9 @@ final class MyTabBarController: UITabBarController {
 
         let firstVC = MyViewController.instantiate(model: AdditionModel())
         let secondVC = MyViewController.instantiate(model: SubtractionModel())
+        let thirdVC = MyViewController.instantiate(model: MultiplicationModel())
 
-        self.viewControllers = [firstVC, secondVC]
+        self.viewControllers = [firstVC, secondVC, thirdVC]
     }
 
 }

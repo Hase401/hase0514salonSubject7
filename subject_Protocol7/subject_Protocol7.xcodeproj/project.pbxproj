@@ -18,6 +18,7 @@
 		BA7DE5A426C4CDDE00CF5B62 /* CalculateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7DE5A326C4CDDE00CF5B62 /* CalculateProtocol.swift */; };
 		BA7DE5A626C538A800CF5B62 /* AdditionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7DE5A526C538A800CF5B62 /* AdditionModel.swift */; };
 		BA7DE5A826C5393300CF5B62 /* SubtractionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7DE5A726C5393300CF5B62 /* SubtractionModel.swift */; };
+		BA89A05B26C8D80F00735984 /* MultiplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA89A05A26C8D80F00735984 /* MultiplicationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BA7DE5A326C4CDDE00CF5B62 /* CalculateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateProtocol.swift; sourceTree = "<group>"; };
 		BA7DE5A526C538A800CF5B62 /* AdditionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionModel.swift; sourceTree = "<group>"; };
 		BA7DE5A726C5393300CF5B62 /* SubtractionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionModel.swift; sourceTree = "<group>"; };
+		BA89A05A26C8D80F00735984 /* MultiplicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				BA7DE5A526C538A800CF5B62 /* AdditionModel.swift */,
 				BA7DE5A726C5393300CF5B62 /* SubtractionModel.swift */,
+				BA89A05A26C8D80F00735984 /* MultiplicationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				BA7DE5A426C4CDDE00CF5B62 /* CalculateProtocol.swift in Sources */,
 				BA7DE5A826C5393300CF5B62 /* SubtractionModel.swift in Sources */,
 				BA7DE5A626C538A800CF5B62 /* AdditionModel.swift in Sources */,
+				BA89A05B26C8D80F00735984 /* MultiplicationModel.swift in Sources */,
 				BA7DE58226C4BDF700CF5B62 /* MyViewController.swift in Sources */,
 				BA7DE5A226C4CAF300CF5B62 /* MyTabBarController.swift in Sources */,
 				BA7DE57E26C4BDF700CF5B62 /* AppDelegate.swift in Sources */,

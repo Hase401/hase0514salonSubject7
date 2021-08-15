@@ -32,7 +32,7 @@ final class MyViewController: UIViewController {
         calculatedResultLabel.text = String(resultNum)
     }
 
-    // ViewController が index を意識しなくなったので、Tab以外でも使える画面になった
+    // ViewController が index を意識しなくなったので、Tab以外でも使える画面(ViewController)になった
         // → func configue(index: Int) みたいにしてmodelをindexから渡してVC作るのは❌
     static func instantiate(model: CalculateProtocol) -> MyViewController {
         guard let vc = UIStoryboard(name: "Calculate", bundle: nil).instantiateInitialViewController() as? MyViewController else {
